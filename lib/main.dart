@@ -1,17 +1,7 @@
 import 'package:flutter/material.dart';
-import 'home_page.dart';
-import 'quiz.dart';
-import 'questions.dart';
+import 'package:quiz_app/quiz.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(home: Quiz()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(home: Quiz());
-  }
-} 
